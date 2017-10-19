@@ -1,0 +1,12 @@
+---
+applications:
+  -
+    buildpack: java_buildpack
+    instances: 1
+    memory: 1G
+    name: config
+    path: ./build/libs/config.jar
+    random-route: true
+    timeout: 180
+    services:
+      - config-store
